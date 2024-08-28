@@ -277,3 +277,8 @@ if __name__ == '__main__':
     result = sorted(result, key=lambda i: i[0])
     for itemset, support in result:
         print(str(itemset) + ' ' + str(support))
+
+
+p.add_option('-t', '--theme', dest='theme', type='str',
+    help='Chọn theme cho giao diện đầu ra (mặc định: default)')
+p.set_defaults(theme='default')
